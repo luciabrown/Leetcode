@@ -2,7 +2,7 @@
 
 import "slices"
 import "math"
-import "fmt"
+
 func isUgly(n int) bool {
     if n<=0{
         return false
