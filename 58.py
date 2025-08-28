@@ -6,5 +6,4 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        splitted=s.split()
-        return len(splitted[-1])
+        return len(s.split()[-1])
