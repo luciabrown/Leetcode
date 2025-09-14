@@ -3,8 +3,8 @@
 import heapq
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        maxHeap = [(-number,index) for index, number in enumerate(nums)]
+        maxHeap = [-number for number in nums]
         heapq.heapify(maxHeap)
-        firstNumber,firstIndex = heapq.heappop(maxHeap)
-        secondNumber,secondIndex = heapq.heappop(maxHeap)
+        firstNumber= heapq.heappop(maxHeap)
+        secondNumber = heapq.heappop(maxHeap)
         return ((-firstNumber)-1)*((-secondNumber)-1)
